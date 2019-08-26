@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1" onclick="gugudan()">gugudan</button>
+    <script>
+        var $doc = document.getElementById('btn1');
+        console.log($doc);
+        $doc.onclick = gugudan;
+        function gugudan(event){
+            var newgugudan = event.view.gugudan; 
+            document.write(newgugudan);
+        }
+
+    </script>
+</body>
+</html>
